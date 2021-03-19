@@ -34,6 +34,8 @@ export class HomeComponent implements OnInit {
       { name: 'twitter:image:height', content: "400"  },
       { name: 'twitter:image:width', content: "300" },
       { name: 'twitter:card', content: "summary" }]);
+      window.alert("test window while using ssr");
+      localStorage.setItem("test storage","this is used for testing the storage");
   }
   
 }
